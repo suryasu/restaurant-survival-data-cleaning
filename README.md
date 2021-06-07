@@ -1,1 +1,8 @@
-# restaurant-survival-data-survival
+# Data cleaning for Yelp Visualization [here](https://github.com/suryasu/restaurant-survival)
+
+There are four files created for different visualizations
+1. **clean_yelp_dataset** removes all Yelp business from the Yelp Business Dataset that are not restaurants or bars, flattens the dataset, and removes all business categories that are not in the top 17 categories. This is used in all of our visualizations.
+2. **json_to_csv_converter** is based on the code open sourced by Yelp on https://github.com/Yelp/dataset-examples. It converts the json into a csv for Tableau to injest. It is used in all of our visualizations
+3. **review_engagement** removes all the Yelp businesses from the Yelp Review Dataset that are not restaurants or bars. It also removes all factors that are not useful for our visualization. This script was specifically created to capture data for the [visualization featuring review engagement](https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/D5?:language=en-US&:display_count=n&:origin=viz_share_link)
+4. **combine_reviews_and_business** combines the Yelp Review Dataset and the Yelp Business Dataset. This script was specifically created to capture data for the [visualization featuring review engagement](https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/D5?:language=en-US&:display_count=n&:origin=viz_share_link)
+5. **add_is_closed_and_aggregate_stars** counts the number of closed businesses and aggregate number of businesses at each star rating. This script was specifically created for the following visualization featuring an [analysis of star rating](https://public.tableau.com/views/TrendsinRestaurantSurvivalandSuccessEdited_v2019_4/D3?:language=en-US&:display_count=n&:origin=viz_share_link)
